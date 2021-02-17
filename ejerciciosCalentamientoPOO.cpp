@@ -6,12 +6,13 @@
 
 using namespace std;
 
-int iva( int numero ){
+float iva( float numero ){
     return numero * 1.19;
 }
 
 int main(){
-    int numero, precioIva;
+    int float;
+    int precioIva;
     string nombre;
     cout << "Ingrese el Nombre de un producto: ";
     cin >> nombre;
