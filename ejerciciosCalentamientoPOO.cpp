@@ -6,12 +6,12 @@
 
 using namespace std;
 
-float iva( float numero ){
+float calcularIva( float numero ){
     return numero * 1.19;
 }
 
 int main(){
-    int float;
+    float numero;
     int precioIva;
     string nombre;
     cout << "Ingrese el Nombre de un producto: ";
@@ -19,8 +19,7 @@ int main(){
     cout << "Ingrese el precio de un producto: ";
     cin >> numero;
     cout << "Calculando iva..." << endl;
-    precioIva = iva( numero );
-    cout << "el precio del iva es: " << precioIva << endl;
+    cout << "el precio del iva es: " << calcularIva( numero ) << endl;
     return 0;
 }
 
