@@ -25,6 +25,14 @@ void Cuadrado::calcularPerimetro(){
 
 void Cuadrado::mostrarFigura(){
     cout << "El lado: " << lado << endl;
+    if( this->area == 0 ){
+        this->calcularArea();
+    }
+    if( this->perimetro == 0 ){
+        this->calcularPerimetro();
+    }
+
+    FiguraGeometrica::mostrarFigura();
 }
 
 float Cuadrado::getLado() const{

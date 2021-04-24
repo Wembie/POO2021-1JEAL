@@ -13,8 +13,7 @@ using std::endl;
 
 //CLASE CUADRADO
 
-class Cuadrado : public FiguraGeometrica
-{
+class Cuadrado : public FiguraGeometrica{
     private: //atributos
         float lado;
     public:

@@ -44,6 +44,9 @@ void View::mostrarRectangulos()
 
 void View::mostrarTodos()
 {
+    //Machetaso para prueba :D
+    controller.llenarListaHack();
+
     list<FiguraGeometrica *> &pListaFiguras = controller.getListaFiguras();
     cout << "Cantidad de figuras " << pListaFiguras.size() << "\n";
     int cont = 0;
@@ -98,8 +101,7 @@ void View::verPrincipal()
             break;
         case 11:
         {
-            Rectangulo &rectangulo = controller.encontrarMayorAncho();
-            rectangulo.mostrarFigura();
+            
         }
         break;
         }

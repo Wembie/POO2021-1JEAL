@@ -5,6 +5,7 @@
 #include "../Model/Circulo.h"
 #include "../Model/Triangulo.h"
 #include "../Model/Rectangulo.h"
+#include "../Model/Cuadrado.h"
 
 #include <iostream>
 #include <list>
@@ -36,11 +37,13 @@ public:
     Rectangulo &encontrarMayorAncho();
 
     // TO-DO
-
+    void llenarListaHack();
     list<Rectangulo> &getListaCirculo();
     void agregarTriagulo(float base, float altura);
     void agregarCirculo(float radio);
 
+
+    //
 
     list<FiguraGeometrica *> &getListaFiguras();
 };

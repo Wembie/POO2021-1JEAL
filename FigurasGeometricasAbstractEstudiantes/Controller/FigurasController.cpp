@@ -2,6 +2,7 @@
 
 // Inicializacion constante estatica para elemento compartido
 const int FigurasController::MAX_ITEMS = 10;
+
 void FigurasController::agregarRectagulo(const float largo, const float ancho)
 {
     if (listaRectangulo.size() < MAX_ITEMS)
@@ -32,6 +33,18 @@ void FigurasController::agregarCirculo(float radio)
     }
 }
 
+void FigurasController::llenarListaHack(){
+    Circulo * pMiCirculo = new Circulo( 10 );
+    Rectangulo * pMiRectangulo = new Rectangulo( 10, 10 );
+    Triangulo * pMiTriangulo = new Triangulo( 5, 4 );
+    Cuadrado * pMiCuadrado = new Cuadrado( 20 );
+    //int arreglo[ 10 ];
+    this->pListaFiguras.push_back( pMiCirculo );
+    this->pListaFiguras.push_back( pMiRectangulo );
+    this->pListaFiguras.push_back( pMiTriangulo );
+    this->pListaFiguras.push_back( pMiCuadrado );
+}
+
 list<Rectangulo> &FigurasController::getListaRectangulo()
 {
     // Creo la  referencia
@@ -44,7 +57,6 @@ list<FiguraGeometrica *> &FigurasController::getListaFiguras()
 {
     return pListaFiguras;
 }
-
 
 Rectangulo &FigurasController::encontrarMayorAncho()
 {

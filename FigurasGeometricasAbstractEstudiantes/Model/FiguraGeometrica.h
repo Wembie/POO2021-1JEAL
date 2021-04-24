@@ -23,8 +23,8 @@ protected:
 public:
     FiguraGeometrica(); //NO OLVIDAR
     FiguraGeometrica(string color);
-    virtual void calcularArea() = 0;      // Metodo virtual puro
-    virtual void calcularPerimetro() = 0; // Metodo virtual puro
+    virtual void calcularArea() = 0;
+    virtual void calcularPerimetro() = 0;
     virtual void mostrarFigura();
     string getColor() const;
     void setColor(string);

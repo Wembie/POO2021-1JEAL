@@ -10,8 +10,7 @@ FiguraGeometrica::FiguraGeometrica(string color)
     this->color = color;
 }
 
-void FiguraGeometrica::mostrarFigura()
-{
+void FiguraGeometrica::mostrarFigura(){
     cout << "El color de la figura es : " << this->color << "\n";
 }
 

@@ -30,6 +30,14 @@ void Triangulo::calcularPerimetro()
 
 void Triangulo::mostrarFigura(){
     cout << "La base: " << base << " -- " << "la altura: " << altura << endl;
+    if( this->area == 0 ){
+        this->calcularArea();
+    }
+    if( this->perimetro == 0 ){
+        this->calcularPerimetro();
+    }
+
+    FiguraGeometrica::mostrarFigura();
 }
 
 float Triangulo::getBase() const{

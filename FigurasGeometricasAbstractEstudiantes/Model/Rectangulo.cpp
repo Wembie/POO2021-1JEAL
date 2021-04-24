@@ -31,6 +31,14 @@ void Rectangulo::mostrarFigura()
 {
     cout << "El ancho: " << ancho << " -- "
          << "el largo: " << largo << endl;
+    if( this->area == 0 ){
+        this->calcularArea();
+    }
+    if( this->perimetro == 0 ){
+        this->calcularPerimetro();
+    }
+
+    FiguraGeometrica::mostrarFigura();
 }
 
 float Rectangulo::getAncho()
