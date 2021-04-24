@@ -2,7 +2,6 @@
 
 // Inicializacion constante estatica para elemento compartido
 const int FigurasController::MAX_ITEMS = 10;
-
 void FigurasController::agregarRectagulo(const float largo, const float ancho)
 {
     if (listaRectangulo.size() < MAX_ITEMS)
@@ -45,6 +44,7 @@ list<FiguraGeometrica *> &FigurasController::getListaFiguras()
 {
     return pListaFiguras;
 }
+
 
 Rectangulo &FigurasController::encontrarMayorAncho()
 {

@@ -6,8 +6,8 @@ MODEL := Model
 debug := -ggdb3
 
 all: programa
-programa: figura circulo cuadrado rectangulo triangulo controlador vista main
-	g++ ${debug} -o Ejecutable FiguraGeometrica.o Circulo.o Cuadrado.o Rectangulo.o Triangulo.o FigurasController.o View.o Main.o
+programa: figura rectangulo triangulo circulo cuadrado controlador vista main
+	g++ ${debug} -o Ejecutable FiguraGeometrica.o Rectangulo.o Triangulo.o Circulo.o FigurasController.o View.o Main.o
 controlador: ${CONTROLLER}/FigurasController.cpp ${CONTROLLER}/FigurasController.h ${MODEL}/Circulo.h ${MODEL}/Rectangulo.h ${MODEL}/Triangulo.h
 	g++ -c ${debug} ${CONTROLLER}/FigurasController.cpp
 circulo: ${MODEL}/Circulo.cpp ${MODEL}/Circulo.h

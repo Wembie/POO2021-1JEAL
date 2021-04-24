@@ -10,7 +10,9 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-class Rectangulo
+#include "FiguraGeometrica.h"
+
+class Rectangulo: public FiguraGeometrica
 {
 private:
     float ancho, largo;

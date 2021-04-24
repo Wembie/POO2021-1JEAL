@@ -42,8 +42,6 @@ public:
     void agregarCirculo(float radio);
 
 
-    //
-
     list<FiguraGeometrica *> &getListaFiguras();
 };
 //#define FIGURAS_CONTROLLER_H

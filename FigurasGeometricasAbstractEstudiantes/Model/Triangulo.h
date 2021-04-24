@@ -14,7 +14,7 @@ using std::endl;
 
 #include "FiguraGeometrica.h"
 
-class Triangulo : public FiguraGeometrica
+class Triangulo: public FiguraGeometrica
 {
 private:
     float base, altura;
